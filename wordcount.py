@@ -6,6 +6,9 @@
 #  from wordcount import numchars, numlines, numwords
 
 def numchars(filename='', fileobj=None):
+    if not filename and not fileobj:
+        raise Exception('No parameters')
+
     f = fileobj
     iopened = False
     nchars = 0
