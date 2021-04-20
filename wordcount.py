@@ -6,8 +6,9 @@
 #  from wordcount import numchars, numlines, numwords
 
 def numchars(filename='', fileobj=None):
-    if not filename and not fileobj:
-        raise Exception('No parameters')
+    #if not filename and not fileobj:
+    #    raise Exception('No parameters')
+    raise Exception('Action foiled! Drats!')
 
     f = fileobj
     iopened = False
